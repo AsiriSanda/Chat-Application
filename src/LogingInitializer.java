@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ClientInitializer extends Application {
+public class LogingInitializer extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -13,8 +13,7 @@ public class ClientInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("ClientForm.fxml"))));
+        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("views/logingForm.fxml"))));
         primaryStage.show();
-
     }
 }
